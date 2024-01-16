@@ -6,7 +6,6 @@ PROJECT earthly-technologies/core
 FROM golang:1.21-alpine3.17
 
 
-
 RUN apk add --update --no-cache \
     bash \
     bash-completion \
