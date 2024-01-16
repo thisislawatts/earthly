@@ -5,7 +5,6 @@ PROJECT earthly-technologies/core
 # "Error: default OCI runtime "crun" not found: invalid argument".
 FROM golang:1.21-alpine3.17
 
-
 RUN apk add --update --no-cache \
     bash \
     bash-completion \
