@@ -183,7 +183,7 @@ func (b *Builder) startRegistryProxy(ctx context.Context, caps apicaps.CapSet) (
 		return nil, false
 	}
 
-	isDarwin := runtime.GOOS == "darwin"
+	isDarwin := runtime.GOOS == "darwin" || runtime.GOOS == "windows"
 
 	controller := regproxy.NewController(
 		b.s.bkClient.RegistryClient(),
